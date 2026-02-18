@@ -1,0 +1,423 @@
+/* ============================================================================
+   STYLE.CSS — twinMokakopa (versión RTL espejo)
+   Portfolio de proyectos artísticos de Monica Kopatschek - versión derecha
+   ============================================================================ */
+
+/* === RESET Y CONFIGURACIÓN GLOBAL ========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #000;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: auto; /* permite scroll vertical entre proyectos */
+}
+
+/* === HEADER: NOMBRE + SELECTOR DE IDIOMAS (arriba DERECHA) ============== */
+/*
+   mix-blend-mode: difference con color: #fff en el contenedor.
+   Sobre fondo blanco se ven negros, sobre imágenes oscuras se ven claros.
+   Mismo efecto que el menú de abajo.
+*/
+
+#site-header {
+  position: fixed;
+  top: 20px;
+  right: 20px; /* CAMBIADO: de left a right */
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* AÑADIDO: alinear a la derecha */
+  gap: 4px;
+  mix-blend-mode: difference;
+  color: #fff;
+}
+
+/* "mokakopa" — clickable, abre el about */
+#site-name {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* ES  EN  CAT — el activo va en negrita y opacity 1 */
+#language-selector {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+}
+
+#language-selector span {
+  cursor: pointer;
+  color: inherit;
+  font-weight: normal;
+}
+
+#language-selector span.active {
+  font-weight: bold;
+}
+
+/* === ABOUT OVERLAY (velo blanco semitransparente a pantalla completa) ====== */
+
+#about-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.92);
+  z-index: 2000;
+  overflow-y: auto;
+  display: block;
+  /* Transición suave de apertura/cierre */
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
+}
+
+/* Estado oculto del overlay */
+#about-overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Contenido del about centrado con padding 20dvh arriba y abajo */
+#about-content {
+  max-width: 560px;
+  padding: 20dvh 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#about-content h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+#about-content .about-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+#about-content p {
+  margin-bottom: 16px;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+/* Link pequeño al final del about */
+#about-content .about-footer {
+  margin-top: 40px;
+  font-size: 11px;
+  color: #666;
+}
+
+#about-content .about-footer a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#about-content .about-footer a:hover {
+  color: #000;
+}
+
+/* Botón cerrar (×) arriba IZQUIERDA del overlay */
+#close-about {
+  position: fixed;
+  top: 20px;
+  left: 20px; /* CAMBIADO: de right a left */
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  z-index: 2001;
+  line-height: 1;
+}
+
+#close-about:hover {
+  color: #666;
+}
+
+/* === MENÚ DE PROYECTOS (abajo DERECHA, texto pelao, blend-mode) ========= */
+/*
+   Sin fondo, sin blur, sin bordes.
+   mix-blend-mode: difference con color: #fff en los links
+   → sobre fondo blanco se ven negros, sobre imágenes oscuras se ven claros.
+*/
+
+/* Capa 1: todos los links con blend mode difference */
+#menu {
+  position: fixed;
+  right: 20px; /* CAMBIADO: de left a right */
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* AÑADIDO: alinear a la derecha */
+  gap: 4px;
+  z-index: 1000;
+  mix-blend-mode: difference;
+  color: #fff;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 1px 2px;
+}
+
+/* Capa 2: link activo y hovers, sin blend mode, encima */
+#menu-active {
+  position: fixed;
+  right: 20px; /* CAMBIADO: de left a right */
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* AÑADIDO: alinear a la derecha */
+  gap: 4px;
+  z-index: 1001;
+}
+
+#menu-active a {
+  text-decoration: none;
+  color: transparent;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 1px 2px;
+  background-image: linear-gradient(#FF69B4, #FF69B4);
+  background-repeat: no-repeat;
+  background-position: right bottom; /* CAMBIADO: de left a right */
+  background-size: 0% 3px;
+  transition: background-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#menu-active a:hover {
+  background-size: 100% 3px;
+}
+
+#menu-active a.active {
+  color: #000;
+  background-size: 100% 100%;
+}
+
+#menu-active a.active:hover {
+  background-size: 100% 100%;
+}
+
+/* === CONTENEDOR DE PROYECTOS ============================================== */
+
+#projects-container {
+  width: 100%;
+}
+
+/* Cada proyecto ocupa toda la pantalla (scroll vertical entre proyectos) */
+.project {
+  width: 100dvw;
+  height: 100dvh;
+  position: relative;
+  overflow: hidden;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: auto;
+}
+
+
+
+/* Barra de navegación de imágenes — indicador de progreso bottom (global y fija) */
+#global-scrollbar-track {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100dvw;
+  height: 2dvh;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#global-scrollbar-track:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#global-scrollbar-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  min-width: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  cursor: grab;
+  transition:
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+#global-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+#global-scrollbar-thumb.dragging {
+  background: rgba(255, 255, 255, 1);
+  cursor: grabbing;
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.8);
+}
+
+/* === GALERÍA HORIZONTAL SCROLLEABLE ======================================= */
+/*
+   Cada proyecto tiene un scroll horizontal con imágenes + texto al final.
+   El padding-right se calcula dinámicamente en JS para centrar la primera imagen.
+*/
+
+.gallery {
+  display: flex;
+  flex-direction: row-reverse; /* AÑADIDO: invertir dirección del flujo */
+  align-items: center;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 4dvw; /* espaciado responsive en viewport width */
+  /* Ocultar scrollbar en todos los navegadores */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+/* === ITEMS DE LA GALERÍA (imágenes y bloque de texto) ===================== */
+
+/* Loader simplificado: cada imagen hace fade-in individual al cargar */
+.gallery-item {
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Cuando la imagen carga, JS añade .loaded → fade in */
+.gallery-item.loaded {
+  opacity: 1;
+}
+
+/* Las imágenes con tamaño adaptativo */
+.gallery-item img {
+  max-height: 80dvh;
+  max-width: 85dvw; /* evita que imágenes panorámicas se salgan */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Bloque de texto al final de cada galería */
+.gallery-text {
+  flex-shrink: 0;
+  width: 80dvw;
+  max-width: 560px;
+  padding: 40px;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; /* AÑADIDO: alinear contenido a la derecha */
+  text-align: right; /* AÑADIDO: alinear texto a la derecha */
+  height: 100%;
+  /* El font-size se ajusta dinámicamente en JS según la cantidad de texto */
+}
+
+.gallery-text h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.gallery-text p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.gallery-text a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.gallery-text a:hover {
+  color: #666;
+}
+
+/* === RESPONSIVE (móvil < 768px) =========================================== */
+
+@media (max-width: 768px) {
+  #site-header {
+    top: 15px;
+    right: 15px; /* CAMBIADO: de left a right */
+  }
+
+  #site-name {
+    font-size: 18px;
+  }
+
+  #language-selector {
+    font-size: 11px;
+  }
+
+  #menu {
+    right: 15px; /* CAMBIADO: de left a right */
+    bottom: 15px;
+    gap: 2px;
+  }
+
+  #menu a {
+    font-size: 12px;
+  }
+
+  .gallery {
+    gap: 2dvw; /* espaciado más pequeño en móvil */
+  }
+
+  .gallery-item img {
+    max-height: 70dvh;
+    max-width: 90dvw; /* más espacio horizontal en móvil */
+  }
+
+  .gallery-text {
+    width: 90dvw;
+    padding: 20px;
+  }
+
+  .gallery-text h2 {
+    font-size: 16px;
+  }
+
+  #about-content {
+    padding: 12dvh 20px; /* menos padding vertical en móvil */
+  }
+}
