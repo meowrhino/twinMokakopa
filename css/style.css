@@ -206,7 +206,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   padding: 1px 2px;
-  background-image: linear-gradient(#FF69B4, #FF69B4);
+  background-image: linear-gradient(#FFFF00, #FFFF00);
   background-repeat: no-repeat;
   background-position: right bottom; /* CAMBIADO: de left a right */
   background-size: 0% 3px;
@@ -295,7 +295,7 @@ body {
 
 .gallery {
   display: flex;
-  flex-direction: row-reverse; /* AÑADIDO: invertir dirección del flujo */
+  flex-direction: row; /* Flujo normal: izquierda -> derecha */
   align-items: center;
   height: 100%;
   overflow-x: auto;
