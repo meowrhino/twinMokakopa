@@ -399,6 +399,16 @@ body {
     font-size: 12px;
   }
 
+  #menu-active {
+    right: 15px;
+    bottom: 15px;
+    gap: 2px;
+  }
+
+  #menu-active a {
+    font-size: 12px;
+  }
+
   .gallery {
     gap: 2dvw; /* espaciado más pequeño en móvil */
   }
