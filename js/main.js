@@ -33,14 +33,14 @@ async function init() {
         initMenu();
         initAboutOverlay();
         initScrollSpy();
-        initGlobalScrollbar();
+
         initResizeHandler();
     } catch (error) {
         console.error('Error al inicializar:', error);
         document.getElementById('projects-container').innerHTML =
             '<div style="display:flex;justify-content:center;align-items:center;' +
             'height:100vh;flex-direction:column;padding:20px;text-align:center;">' +
-            '<h1>error al cargar</h1>' +
+            '<h1>error al cargar ana lópez</h1>' +
             '<p>no se pudieron cargar los datos. recarga la página.</p>' +
             '<p style="color:#666;font-size:14px;margin-top:20px;">error: ' +
             error.message + '</p></div>';
@@ -301,7 +301,7 @@ function getTextsByLang(projectData) {
 
 
 // ============================================================================
-// MENÚ DE NAVEGACIÓN (abajo izquierda)
+// MENÚ DE NAVEGACIÓN (abajo derecha)
 //
 // Lista de títulos de proyecto como links ancla (#proyecto).
 // El proyecto visible se resalta con clase .active (scroll spy).
@@ -662,142 +662,3 @@ function renderContact() {
 }
 
 
-// ============================================================================
-// BARRA DE NAVEGACIÓN GLOBAL
-//
-// Una única barra fija en el bottom center que se actualiza dinámicamente
-// según el proyecto activo. Permite navegar entre las imágenes del proyecto
-// actual mediante drag o click.
-// ============================================================================
-
-function initGlobalScrollbar() {
-    const track = document.getElementById('global-scrollbar-track');
-    const thumb = document.getElementById('global-scrollbar-thumb');
-    
-    let currentGallery = null;
-    let isDragging = false;
-    let dragStartX = 0;
-    let dragStartLeft = 0;
-
-    // Función para actualizar el thumb según el scroll de la galería activa
-    const updateThumb = () => {
-        if (!currentGallery) {
-            track.style.display = 'none';
-            return;
-        }
-
-        const scrollW = currentGallery.scrollWidth;
-        const clientW = currentGallery.clientWidth;
-        
-        if (scrollW <= clientW) {
-            // Todo el contenido cabe en pantalla, ocultar scrollbar
-            track.style.display = 'none';
-            return;
-        }
-        
-        track.style.display = '';
-        
-        // Ratio: cuánto del contenido total es visible
-        const ratio = clientW / scrollW;
-        const thumbWidth = Math.max(30, ratio * track.offsetWidth);
-        thumb.style.width = thumbWidth + 'px';
-        
-        // Posición del thumb dentro del track
-        const maxScroll = scrollW - clientW;
-        const maxThumbLeft = track.offsetWidth - thumbWidth;
-        const pct = maxScroll > 0 ? currentGallery.scrollLeft / maxScroll : 0;
-        thumb.style.left = (pct * maxThumbLeft) + 'px';
-    };
-
-    // Observar qué proyecto está visible y actualizar la galería activa
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const projectDiv = entry.target;
-                const gallery = projectDiv.querySelector('.gallery');
-                
-                // Remover listener del anterior
-                if (currentGallery) {
-                    currentGallery.removeEventListener('scroll', updateThumb);
-                }
-                
-                // Actualizar galería activa
-                currentGallery = gallery;
-                
-                // Añadir listener al nuevo
-                if (currentGallery) {
-                    currentGallery.addEventListener('scroll', updateThumb);
-                    updateThumb();
-                }
-            }
-        });
-    }, { threshold: 0.5 });
-
-    // Observar todos los proyectos
-    document.querySelectorAll('.project').forEach(el => observer.observe(el));
-
-    // Recalcular al resize
-    window.addEventListener('resize', updateThumb);
-
-    // --- Drag del thumb ---
-    thumb.addEventListener('mousedown', e => {
-        if (!currentGallery) return;
-        e.preventDefault();
-        isDragging = true;
-        dragStartX = e.clientX;
-        dragStartLeft = parseFloat(thumb.style.left) || 0;
-        thumb.classList.add('dragging');
-    });
-
-    window.addEventListener('mousemove', e => {
-        if (!isDragging || !currentGallery) return;
-        const dx = e.clientX - dragStartX;
-        const thumbWidth = thumb.offsetWidth;
-        const maxThumbLeft = track.offsetWidth - thumbWidth;
-        const newLeft = Math.max(0, Math.min(maxThumbLeft, dragStartLeft + dx));
-        const pct = maxThumbLeft > 0 ? newLeft / maxThumbLeft : 0;
-        currentGallery.scrollLeft = pct * (currentGallery.scrollWidth - currentGallery.clientWidth);
-    });
-
-    window.addEventListener('mouseup', () => {
-        if (isDragging) {
-            isDragging = false;
-            thumb.classList.remove('dragging');
-        }
-    });
-
-    // --- Click en el track (fuera del thumb) para saltar ---
-    track.addEventListener('click', e => {
-        if (!currentGallery || e.target === thumb) return;
-        const rect = track.getBoundingClientRect();
-        const clickX = e.clientX - rect.left;
-        const pct = clickX / rect.width;
-        currentGallery.scrollLeft = pct * (currentGallery.scrollWidth - currentGallery.clientWidth);
-    });
-
-    // --- Touch support ---
-    thumb.addEventListener('touchstart', e => {
-        if (!currentGallery) return;
-        isDragging = true;
-        dragStartX = e.touches[0].clientX;
-        dragStartLeft = parseFloat(thumb.style.left) || 0;
-        thumb.classList.add('dragging');
-    }, { passive: true });
-
-    window.addEventListener('touchmove', e => {
-        if (!isDragging || !currentGallery) return;
-        const dx = e.touches[0].clientX - dragStartX;
-        const thumbWidth = thumb.offsetWidth;
-        const maxThumbLeft = track.offsetWidth - thumbWidth;
-        const newLeft = Math.max(0, Math.min(maxThumbLeft, dragStartLeft + dx));
-        const pct = maxThumbLeft > 0 ? newLeft / maxThumbLeft : 0;
-        currentGallery.scrollLeft = pct * (currentGallery.scrollWidth - currentGallery.clientWidth);
-    }, { passive: true });
-
-    window.addEventListener('touchend', () => {
-        if (isDragging) {
-            isDragging = false;
-            thumb.classList.remove('dragging');
-        }
-    });
-}

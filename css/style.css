@@ -1,6 +1,6 @@
 /* ============================================================================
    STYLE.CSS — twinMokakopa (versión RTL espejo)
-   Portfolio de proyectos artísticos de Monica Kopatschek - versión derecha
+   Portfolio de proyectos artísticos de Ana López - versión derecha
    ============================================================================ */
 
 /* === RESET Y CONFIGURACIÓN GLOBAL ========================================= */
@@ -329,49 +329,6 @@ body {
 
 
 
-/* Barra de navegación de imágenes — indicador de progreso bottom (global y fija) */
-#global-scrollbar-track {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100dvw;
-  height: 2dvh;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(4px);
-  z-index: 1000;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-#global-scrollbar-track:hover {
-  background: rgba(255, 255, 255, 0.3);
-}
-
-#global-scrollbar-thumb {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  min-width: 30px;
-  background: rgba(255, 255, 255, 0.8);
-  cursor: grab;
-  transition:
-    background 0.2s ease,
-    box-shadow 0.2s ease;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
-}
-
-#global-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 1);
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
-}
-
-#global-scrollbar-thumb.dragging {
-  background: rgba(255, 255, 255, 1);
-  cursor: grabbing;
-  box-shadow: 0 0 16px rgba(255, 255, 255, 0.8);
-}
-
 /* === GALERÍA HORIZONTAL SCROLLEABLE ======================================= */
 /*
    Cada proyecto tiene un scroll horizontal con imágenes + texto al final.
@@ -380,7 +337,6 @@ body {
 
 .gallery {
   display: flex;
-  flex-direction: row; /* Flujo normal: izquierda -> derecha */
   align-items: center;
   height: 100%;
   overflow-x: auto;
