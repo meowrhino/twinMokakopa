@@ -2,10 +2,9 @@
   "resaltado": "#FFFF00",
   "proyectos": [
     [
-      "teatroPlantas",
+      "basalto",
       {
-        "titulo": "el teatre de les plantes",
-
+        "titulo": "basalto de cadenas rotas",
         "textosES": [
           "Este proyecto consiste en la creación de grabados botánicos y textos poéticos siguiendo la técnica de la ilustración al aguafuerte de los tratados botánicos del s.XVIII. Tanto las imágenes como los textos parten de las ideas, demostradas a lo largo de la historia y reconocidas finalmente en los estudios más recientes, de que las plantas son seres sensibles, se comunican e intercambian información y además tienen la capacidad de resolver los problemas que se les presentan.",
           "Nuestro proceso recupera la metodología de observación de autoras como Maria Sibilla Merian (1647-1717), Anne Pratt (1806–1893), Marianne North (1830–1890), entre otros. La mayoría de piezas se desarrolla mediante la técnica del aguafuerte sobre cobre, posteriormente iluminado a la acuarela, partiendo del ejercicio de comprensión de los seres vegetales como organismos sensibles. A través de las imágenes exploramos las posibilidades narrativas y poéticas que surgen cuando tratamos de imaginar la existencia desde percepciones diferentes a la temporalidad y el desplazamiento humanos.",
@@ -24,14 +23,38 @@
           "El gravat ha estat un dels principals vehicles d'estudi i representació de la botànica abans de l'invent de la fotografia. En aquest projecte es pretén recuperar aquesta funció, però incorporant aspectes del nostre llenguatge visual. El Teatre de les Plantes considera, a més, l'art i l'escriptura com a vehicle d'expressió i imaginació sobre les idees revolucionàries mitjançant les quals diversos autors, des de Plató a Demòcrit, passant per Linné i Darwin, Fechner i Bose (per citar els més coneguts), i desembocant en els actuals neurobiòlegs del món vegetal, Monica Gagliano o Stefano Mancuso, han expressat la seva convicció que les plantes estan dotades d'habilitats i sensibilitats molt més refinades de les que comunament s'observen.",
           "Exposició seleccionada a la convocatòria de Projectes de ciutat 2023\nAmb el suport de Sorea i del Departament de Cultura de la Generalitat de Catalunya"
         ],
-        "imgCount": 91
+        "imgCount": 8
+      }
+    ],
+    [
+      "teatroPlantas",
+      {
+        "titulo": "el teatre de les plantes",
+        "textosES": [
+          "Este proyecto consiste en la creación de grabados botánicos y textos poéticos siguiendo la técnica de la ilustración al aguafuerte de los tratados botánicos del s.XVIII. Tanto las imágenes como los textos parten de las ideas, demostradas a lo largo de la historia y reconocidas finalmente en los estudios más recientes, de que las plantas son seres sensibles, se comunican e intercambian información y además tienen la capacidad de resolver los problemas que se les presentan.",
+          "Nuestro proceso recupera la metodología de observación de autoras como Maria Sibilla Merian (1647-1717), Anne Pratt (1806–1893), Marianne North (1830–1890), entre otros. La mayoría de piezas se desarrolla mediante la técnica del aguafuerte sobre cobre, posteriormente iluminado a la acuarela, partiendo del ejercicio de comprensión de los seres vegetales como organismos sensibles. A través de las imágenes exploramos las posibilidades narrativas y poéticas que surgen cuando tratamos de imaginar la existencia desde percepciones diferentes a la temporalidad y el desplazamiento humanos.",
+          "El grabado ha sido uno de los principales vehículos de estudio y representación de la botánica antes del invento de la fotografía. En este proyecto se pretende recuperar esta función, pero incorporando aspectos de nuestro lenguaje visual. El Teatre de les Plantes considera, además, el arte y la escritura como vehículo de expresión e imaginación sobre las revolucionarias ideas mediante las cuales diversos autores, desde Platón a Demócrito, pasando por Linneo y Darwin, Fechner y Bose (por citar a los más conocidos), y desembocando en los actuales neurobiólogos del mundo vegetal, Monica Gagliano o Stefano Mancuso, han expresado su convicción de que las plantas están dotadas de habilidades y sensibilidades mucho más refinadas de las que comúnmente se observan.",
+          "Exposició seleccionada a la convocatòria de Projectes de ciutat 2023\nAmb el suport de Sorea i del Departament de Cultura de la Generalitat de Catalunya"
+        ],
+        "textosEN": [
+          "This project consists of creating botanical engravings and poetic texts following the etching illustration technique of 18th-century botanical treatises. Both the images and texts draw from ideas demonstrated throughout history and finally recognized in the most recent studies: that plants are sentient beings that communicate, exchange information, and have the capacity to solve the problems they encounter.",
+          "Our process recovers the observational methodology of authors such as Maria Sibilla Merian (1647–1717), Anne Pratt (1806–1893), Marianne North (1830–1890), among others. Most pieces are developed using the etching technique on copper, subsequently illuminated with watercolor, starting from the exercise of understanding plant beings as sentient organisms. Through the images, we explore the narrative and poetic possibilities that arise when we try to imagine existence from perceptions different from human temporality and movement.",
+          "Engraving has been one of the main vehicles for the study and representation of botany before the invention of photography. This project aims to recover this function while incorporating aspects of our visual language. El Teatre de les Plantes also considers art and writing as vehicles of expression and imagination about the revolutionary ideas through which various authors, from Plato to Democritus, through Linnaeus and Darwin, Fechner and Bose (to name the most well-known), and arriving at current plant neurobiologists such as Monica Gagliano and Stefano Mancuso, have expressed their conviction that plants are endowed with abilities and sensitivities far more refined than those commonly observed.",
+          "Exhibition selected for the Projectes de ciutat 2023 call\nWith the support of Sorea and the Department of Culture of the Generalitat de Catalunya"
+        ],
+        "textosCAT": [
+          "Aquest projecte consisteix en la creació de gravats botànics i textos poètics seguint la tècnica de la il·lustració a l'aiguafort dels tractats botànics del s.XVIII. Tant les imatges com els textos parteixen de les idees, demostrades al llarg de la història i reconegudes finalment en els estudis més recents, que les plantes són éssers sensibles, es comuniquen i intercanvien informació i a més tenen la capacitat de resoldre els problemes que se'ls presenten.",
+          "El nostre procés recupera la metodologia d'observació d'autores com Maria Sibilla Merian (1647-1717), Anne Pratt (1806–1893), Marianne North (1830–1890), entre altres. La majoria de peces es desenvolupa mitjançant la tècnica de l'aiguafort sobre coure, posteriorment il·luminat a l'aquarel·la, partint de l'exercici de comprensió dels éssers vegetals com a organismes sensibles. A través de les imatges explorem les possibilitats narratives i poètiques que sorgeixen quan tractem d'imaginar l'existència des de percepcions diferents de la temporalitat i el desplaçament humans.",
+          "El gravat ha estat un dels principals vehicles d'estudi i representació de la botànica abans de l'invent de la fotografia. En aquest projecte es pretén recuperar aquesta funció, però incorporant aspectes del nostre llenguatge visual. El Teatre de les Plantes considera, a més, l'art i l'escriptura com a vehicle d'expressió i imaginació sobre les idees revolucionàries mitjançant les quals diversos autors, des de Plató a Demòcrit, passant per Linné i Darwin, Fechner i Bose (per citar els més coneguts), i desembocant en els actuals neurobiòlegs del món vegetal, Monica Gagliano o Stefano Mancuso, han expressat la seva convicció que les plantes estan dotades d'habilitats i sensibilitats molt més refinades de les que comunament s'observen.",
+          "Exposició seleccionada a la convocatòria de Projectes de ciutat 2023\nAmb el suport de Sorea i del Departament de Cultura de la Generalitat de Catalunya"
+        ],
+        "imgCount": 18
       }
     ],
     [
       "porSiglos",
       {
         "titulo": "por siglos en eros",
-
         "textosES": [
           "Por siglos en Eros es una obra de teatro escrita enteramente en verso que reinterpreta la mitología griega desde una perspectiva feminista y de crítica cultural. La pieza narra la historia de amor entre la diosa Atenea y una artista mortal, un vínculo que se prolonga a lo largo de los siglos bajo la inquieta observación de cuatro figuras alegóricas —Muerte, Eros, Porvenir y Locura— personificaciones de las pasiones que estructuran la experiencia humana.",
           "El proyecto invierte los relatos clásicos en los que el deseo masculino se legitima como fuerza divina que persigue y somete a figuras femeninas. Frente a esa tradición, la obra reivindica el amor entre mujeres como gesto afectivo y político, proponiéndolo como forma de resistencia ante la economía heterosexual del mito. Esta inversión se encarna en un personaje sin nombre —la artista— cuya identidad abierta desestabiliza la noción de autoría fija y permite resignificar a Atenea como heroína trágica, atravesada por el conflicto entre norma y deseo.",
@@ -57,7 +80,6 @@
       "bacanales",
       {
         "titulo": "se acabaron las bacanales",
-
         "textosES": [
           "La exposición Se acabaron las bacanales reúne las acuarelas de Monica Kopatschek y los poemas de Ana López, realizadas entre agosto y septiembre de 2020 en un contexto de convivencia creativa. Concebida a partir del impacto de la crisis sanitaria global, la muestra surge como respuesta a las restricciones que interrumpieron las celebraciones colectivas y la experiencia compartida fuera del espacio digital. Presentada en el marco de Art Jove 2021, la propuesta se configura como gesto de reivindicación ante la pérdida de los rituales comunitarios que estructuran la vida social.",
           "Las acuarelas despliegan composiciones complejas de cuerpos que ríen y reposan sobre la hierba, suspendidos en una atmósfera de aparente ensoñación. Sin embargo, bajo esa luminosidad subyace la conciencia de un final irrevocable: se acabaron las bacanales. Las imágenes, atravesadas por la rabia y la decepción, se convierten así en archivo nostálgico de un tiempo en que el encuentro y la danza constituían formas elementales de existencia. En paralelo, los poemas de Ana López construyen una narración lírica que transcribe los instantes de aquel «dorado final de verano» de 2020.",
@@ -76,7 +98,7 @@
           "Ambdues pràctiques dialoguen des de processos de creació entrellaçats i des d'una voluntat comuna de ficcionalitzar l'experiència per dotar-la de sentit. L'exposició proposa, en última instància, una defensa de les expressions humanes col·lectives com a necessitat vital, afirmant l'art com a espai de resistència simbòlica i reconstrucció després de la fractura històrica.",
           "Proposta guanyadora del premi Art Jove Creació 2021 (Barcelona)"
         ],
-        "imgCount": 48
+        "imgCount": 24
       }
     ]
   ],
@@ -110,9 +132,18 @@
       "nombreEN": "Academic Education",
       "nombreCAT": "Educació Acadèmica",
       "items": [
-        { "fecha": "2018", "titulo": "Máster Universitario en Profesorado de Educación Secundaria Obligatoria, Bachillerato, Formación Profesional y Enseñanzas de Idiomas, Artísticas y Deportivas con especialidad de Dibujo, Imagen y Artes Plásticas" },
-        { "fecha": "2015", "titulo": "Master in Fine Arts en Chelsea College. University of Arts London" },
-        { "fecha": "2012", "titulo": "Licenciatura de Bellas Artes en la Universidad de Barcelona. Especialidad de pintura, grabado y dibujo" }
+        {
+          "fecha": "2018",
+          "titulo": "Máster Universitario en Profesorado de Educación Secundaria Obligatoria, Bachillerato, Formación Profesional y Enseñanzas de Idiomas, Artísticas y Deportivas con especialidad de Dibujo, Imagen y Artes Plásticas"
+        },
+        {
+          "fecha": "2015",
+          "titulo": "Master in Fine Arts en Chelsea College. University of Arts London"
+        },
+        {
+          "fecha": "2012",
+          "titulo": "Licenciatura de Bellas Artes en la Universidad de Barcelona. Especialidad de pintura, grabado y dibujo"
+        }
       ]
     },
     {
@@ -120,17 +151,50 @@
       "nombreEN": "Solo Exhibitions and Selected Projects",
       "nombreCAT": "Exposicions individuals i projectes seleccionats",
       "items": [
-        { "fecha": "2024", "titulo": "El teatre de les plantes. Finalista Exposicions Pere Pruna 2024. Barcelona" },
-        { "fecha": "2023", "titulo": "El teatre de les plantes. CC Vázquez Montalbán. Vallvidrera" },
-        { "fecha": "2022", "titulo": "El teatre de les plantes. Finalista projecte Art i Ciutat. Sant Cugat del Vallès" },
-        { "fecha": "2022", "titulo": "Ventus: silbidos y relatos inverosímiles. La Escocesa. Barcelona" },
-        { "fecha": "2022", "titulo": "Por Siglos en Eros. Boca Nord. Barcelona" },
-        { "fecha": "2022", "titulo": "Se acabaron las bacanales. CC Guinardó. Barcelona" },
-        { "fecha": "2021", "titulo": "Poesía fantasiosa para combatir la resaca. Cercle artístic Sant Lluc. Barcelona" },
-        { "fecha": "2021", "titulo": "Xarxa Poètica de Sant Andreu. Barcelona" },
-        { "fecha": "2021", "titulo": "Se acabaron las Bacanales. Finalista de Art Jove 2021. Barcelona" },
-        { "fecha": "2018", "titulo": "Hadas y esbirros. Centre cívic Folch i Torres. Barcelona" },
-        { "fecha": "2018", "titulo": "Art knows no boundaries. Werkschau. Kreis Teltow-Fläming. Network Democracy and Humanity. Berlin" }
+        {
+          "fecha": "2024",
+          "titulo": "El teatre de les plantes. Finalista Exposicions Pere Pruna 2024. Barcelona"
+        },
+        {
+          "fecha": "2023",
+          "titulo": "El teatre de les plantes. CC Vázquez Montalbán. Vallvidrera"
+        },
+        {
+          "fecha": "2022",
+          "titulo": "El teatre de les plantes. Finalista projecte Art i Ciutat. Sant Cugat del Vallès"
+        },
+        {
+          "fecha": "2022",
+          "titulo": "Ventus: silbidos y relatos inverosímiles. La Escocesa. Barcelona"
+        },
+        {
+          "fecha": "2022",
+          "titulo": "Por Siglos en Eros. Boca Nord. Barcelona"
+        },
+        {
+          "fecha": "2022",
+          "titulo": "Se acabaron las bacanales. CC Guinardó. Barcelona"
+        },
+        {
+          "fecha": "2021",
+          "titulo": "Poesía fantasiosa para combatir la resaca. Cercle artístic Sant Lluc. Barcelona"
+        },
+        {
+          "fecha": "2021",
+          "titulo": "Xarxa Poètica de Sant Andreu. Barcelona"
+        },
+        {
+          "fecha": "2021",
+          "titulo": "Se acabaron las Bacanales. Finalista de Art Jove 2021. Barcelona"
+        },
+        {
+          "fecha": "2018",
+          "titulo": "Hadas y esbirros. Centre cívic Folch i Torres. Barcelona"
+        },
+        {
+          "fecha": "2018",
+          "titulo": "Art knows no boundaries. Werkschau. Kreis Teltow-Fläming. Network Democracy and Humanity. Berlin"
+        }
       ]
     },
     {
@@ -138,19 +202,58 @@
       "nombreEN": "Group Exhibitions and Events",
       "nombreCAT": "Exposicions i esdeveniments col·lectius",
       "items": [
-        { "fecha": "2025", "titulo": "El picnic. Tinta Invisible Editions. Barcelona" },
-        { "fecha": "2024", "titulo": "Nubes nacen negras. Taller 131. Barcelona" },
-        { "fecha": "2023", "titulo": "Placenta. Colaboración con el colectivo Tornen les esquelles. Grau-Garriga Centre d'Art textil contemporani. Sant Cugat del Vallès" },
-        { "fecha": "2022", "titulo": "Poemas galácticos. Revista Alborismos. Caracas" },
-        { "fecha": "2021", "titulo": "Triennal Memento Mori. Xefo Art Gallery. Barcelona. Kampus Hybernská. Praga. La trampa gráfica. México" },
-        { "fecha": "2021", "titulo": "Etching and engraving. Barn Gallery. Wingfield" },
-        { "fecha": "2021", "titulo": "A porch on mars. Galería L'Etang d'Art. Bages" },
-        { "fecha": "2018", "titulo": "Colectiva d'estiu. Galeria Espai B. Barcelona" },
-        { "fecha": "2014", "titulo": "Part time show. Chelsea College. Londres" },
-        { "fecha": "2013", "titulo": "Opening show Triangle Space. Londres" },
-        { "fecha": "2013", "titulo": "Dibujando la noche. Anquins Gallery. Reus" },
-        { "fecha": "2012", "titulo": "Dones. Centre cívic Folch i Torres. Barcelona" },
-        { "fecha": "2012", "titulo": "Atraco a mano alzada. Facultat de Belles Arts. Barcelona" }
+        {
+          "fecha": "2025",
+          "titulo": "El picnic. Tinta Invisible Editions. Barcelona"
+        },
+        {
+          "fecha": "2024",
+          "titulo": "Nubes nacen negras. Taller 131. Barcelona"
+        },
+        {
+          "fecha": "2023",
+          "titulo": "Placenta. Colaboración con el colectivo Tornen les esquelles. Grau-Garriga Centre d'Art textil contemporani. Sant Cugat del Vallès"
+        },
+        {
+          "fecha": "2022",
+          "titulo": "Poemas galácticos. Revista Alborismos. Caracas"
+        },
+        {
+          "fecha": "2021",
+          "titulo": "Triennal Memento Mori. Xefo Art Gallery. Barcelona. Kampus Hybernská. Praga. La trampa gráfica. México"
+        },
+        {
+          "fecha": "2021",
+          "titulo": "Etching and engraving. Barn Gallery. Wingfield"
+        },
+        {
+          "fecha": "2021",
+          "titulo": "A porch on mars. Galería L'Etang d'Art. Bages"
+        },
+        {
+          "fecha": "2018",
+          "titulo": "Colectiva d'estiu. Galeria Espai B. Barcelona"
+        },
+        {
+          "fecha": "2014",
+          "titulo": "Part time show. Chelsea College. Londres"
+        },
+        {
+          "fecha": "2013",
+          "titulo": "Opening show Triangle Space. Londres"
+        },
+        {
+          "fecha": "2013",
+          "titulo": "Dibujando la noche. Anquins Gallery. Reus"
+        },
+        {
+          "fecha": "2012",
+          "titulo": "Dones. Centre cívic Folch i Torres. Barcelona"
+        },
+        {
+          "fecha": "2012",
+          "titulo": "Atraco a mano alzada. Facultat de Belles Arts. Barcelona"
+        }
       ]
     }
   ],
