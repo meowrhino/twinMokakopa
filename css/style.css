@@ -291,7 +291,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   padding: 1px 2px;
-  background-image: linear-gradient(#FFFF00, #FFFF00);
+  background-image: linear-gradient(var(--resaltado, #FFFF00), var(--resaltado, #FFFF00));
   background-repeat: no-repeat;
   background-position: right bottom; /* CAMBIADO: de left a right */
   background-size: 0% 3px;
